@@ -1,0 +1,16 @@
+.controls {
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: lightskyblue;
+  padding: 10px;
+}
+
+[nz-button] {
+  margin-bottom: 12px;
+}
+
+nz-button-group {
+  margin-bottom: 8px;
+  margin-right: 8px;
+}

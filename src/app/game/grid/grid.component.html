@@ -1,0 +1,6 @@
+
+<div class="grid-container" draggable="false">
+  <div class="grid-row" *ngFor="let row of (gameService.grid$ | async).data">
+    <game-cell #cell *ngFor="let cell of row" [cell]="cell" [ngStyle]="{ 'padding-bottom': cellHeight + 'px' }" (mousedown)="mousedown(cell, $event)" (mouseup)="mouseup(cell, $event)" (mouseover)="mouseover(cell, $event)"></game-cell>
+  </div>
+</div>

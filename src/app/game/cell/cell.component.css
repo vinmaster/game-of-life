@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  flex: 1;
+  border: 1px solid black;
+  /* padding-bottom: 30px; */
+}
+
+:host:hover {
+  background-color: skyblue;
+}
+
+:host.alive {
+  background-color: green;
+}
