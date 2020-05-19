@@ -42,6 +42,7 @@ export class GridComponent implements OnInit, AfterViewInit {
   }
 
   mousedown(cell: Cell, event) {
+    event.preventDefault();
     this.isMouseDown = true;
     this.currentCell = cell;
     cell.alive = !cell.alive;
@@ -51,11 +52,13 @@ export class GridComponent implements OnInit, AfterViewInit {
   }
 
   mouseup(cell: Cell, event) {
+    event.preventDefault();
     this.isMouseDown = false;
     this.currentCell = null;
   }
 
   mouseover(cell: Cell, event) {
+    event.preventDefault();
     if (this.isMouseDown && !cell.equals(this.currentCell)) {
       cell.alive = !cell.alive;
       // cell.alive
